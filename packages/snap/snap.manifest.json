@@ -1,27 +1,28 @@
 {
   "version": "0.1.0",
-  "description": "An example Snap written in TypeScript.",
-  "proposedName": "TypeScript Example",
+  "description": "Remember it.",
+  "proposedName": "Tx Bookmark",
   "repository": {
     "type": "git",
     "url": "https://github.com/MetaMask/template-snap-monorepo.git"
   },
   "source": {
-    "shasum": "TwVBeJ/PL4uARBEFZmgJukYd3XWyTbilkOPhtdg+GvU=",
+    "shasum": "/q0PoxFbT3WPVnQc+rR/RxG4bFTwLOWPQqL1eAeVwQQ=",
     "location": {
       "npm": {
         "filePath": "dist/bundle.js",
-        "packageName": "snap",
+        "iconPath": "images/icon.svg",
+        "packageName": "tx-bookmark",
         "registry": "https://registry.npmjs.org/"
       }
     }
   },
   "initialPermissions": {
-    "snap_dialog": {},
-    "endowment:rpc": {
-      "dapps": true,
-      "snaps": false
-    }
+    "endowment:page-home": {},
+    "endowment:transaction-insight": {
+      "allowTransactionOrigin": true
+    },
+    "snap_manageState": {}
   },
   "manifestVersion": "0.1"
 }
